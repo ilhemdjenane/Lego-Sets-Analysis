@@ -6,7 +6,7 @@ This project involves creating an interactive Power BI dashboard to analyze a da
 ---
 
 ## Dashboard Overview
-![Dashboard](https://github.com/ilhemdjenane/Lego-Sets-Analysis/blob/70e946b5b4064a106beabef25f82d9b246c203d3/Lego%20Dashboard.png)
+![Dashboard](https://github.com/ilhemdjenane/Lego-Sets-Analysis/blob/aeaf80e8816529599b6e8e605058edb03d67f54f/Lego%20Sets%20Dashboard)
 
 ## Key Objectives
 The primary goals of this project include:
@@ -33,15 +33,12 @@ The dataset includes 18,457 entries detailing LEGO sets. Below are some of the k
 - **category**: Classification of the set type (e.g., normal or special).
 
 ### Dataset Cleaning and Preparation
-1. **Handling Missing Values**:
-   - Rows with critical missing values (e.g., `pieces`, `US_retailPrice`) were filtered out.
-   - Non-critical fields (e.g., `subtheme`) were left as-is.
 
-2. **Feature Engineering**:
+1. **Feature Engineering**:
    - Created a `Price Range` column to group sets into `$`, `$$`, `$$$`, and `$$$$` categories.
    - Grouped `agerange_min` into broader age categories (`5 to 9`, `10 to 14`, etc.).
 
-3. **Data Transformation**:
+2. **Data Transformation**:
    - Aggregated metrics for total pieces, average price, and total sets by themes and categories.
 
 ---
@@ -78,14 +75,14 @@ The table view displays:
 
 ## Key Insights
 1. **Popular Themes**:
-   - The dataset includes 646 unique themes, with `Star Wars` being the most popular, comprising 1,204 sets.
-   - Other top themes include `Harry Potter` and `City`, with over 600 sets each.
+   - The dataset includes 646 unique themes.
 
 2. **Price Distribution**:
-   - **$:** Affordable sets priced below $25 represent **4,078 sets (22%)**.
-   - **$$:** Mid-range sets ($25–$50) make up **1,665 sets (9%)**.
-   - **$$$:** Higher-priced sets ($50–$100) include **827 sets (4%)**.
-   - **$$$$:** Premium sets priced above $100 are **412 sets (2%)**.
+   - **$:** Affordable sets priced below $20 represent **2,081 sets (47%)**.
+   - **$$:** Mid-range sets ($20–$50) make up **1,287sets (30%)**.
+   - **$$$:** Higher-priced sets ($51–$100) include **665 sets (15%)**.
+   - **$$$$:** Premium sets ($105–$500) are **343 sets (7%)**.
+   - **$$$$$:** Ultra Premium sets above $500 are **9 sets (0.2%)**.
 
 3. **Age Group Analysis**:
    - For ages **1 to 4**, there are **538 sets** containing a total of **56,000 pieces**, with an average price of **$29**.
@@ -96,8 +93,8 @@ The table view displays:
 4. **Largest LEGO Sets**:
    - The largest LEGO set is the **World Map**, featuring **11,695 pieces** and priced at **$249.99**.
    - Other notable large sets include:
-     - **The Ultimate Battle for CHIMA:** 10,004 pieces.
      - **Eiffel Tower:** 10,001 pieces, priced at **$629.99**.
+     - **Titanic:** with 9090 pieces at the price **$679.99**
 
 5. **Yearly Trends**:
    - LEGO releases have steadily increased over time, peaking in **2017 with 840 sets released**.
